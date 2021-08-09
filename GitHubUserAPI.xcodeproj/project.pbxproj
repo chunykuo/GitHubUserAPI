@@ -13,6 +13,13 @@
 		02D416FA26BE6AA500FCB01A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D416F826BE6AA500FCB01A /* Main.storyboard */; };
 		02D416FC26BE6AA700FCB01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D416FB26BE6AA700FCB01A /* Assets.xcassets */; };
 		02D416FF26BE6AA700FCB01A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D416FD26BE6AA700FCB01A /* LaunchScreen.storyboard */; };
+		02D4170726BE6AD800FCB01A /* GitHubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4170626BE6AD800FCB01A /* GitHubUser.swift */; };
+		02D4170926BE6D8000FCB01A /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4170826BE6D8000FCB01A /* BaseService.swift */; };
+		02D4170D26BE6FFC00FCB01A /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4170C26BE6FFC00FCB01A /* GitHubService.swift */; };
+		02D4171426C0CDF300FCB01A /* GitHubUserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4171326C0CDF300FCB01A /* GitHubUserListViewModel.swift */; };
+		02D4171826C0D4F600FCB01A /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4171726C0D4F600FCB01A /* Box.swift */; };
+		02D4171A26C0DE8A00FCB01A /* GitHubUserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4171926C0DE8A00FCB01A /* GitHubUserListTableViewCell.swift */; };
+		02D4171C26C0DEDC00FCB01A /* GitHubUserListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4171B26C0DEDC00FCB01A /* GitHubUserListCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		02D416FB26BE6AA700FCB01A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02D416FE26BE6AA700FCB01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02D4170026BE6AA700FCB01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D4170626BE6AD800FCB01A /* GitHubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUser.swift; sourceTree = "<group>"; };
+		02D4170826BE6D8000FCB01A /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		02D4170C26BE6FFC00FCB01A /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		02D4171326C0CDF300FCB01A /* GitHubUserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserListViewModel.swift; sourceTree = "<group>"; };
+		02D4171726C0D4F600FCB01A /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		02D4171926C0DE8A00FCB01A /* GitHubUserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserListTableViewCell.swift; sourceTree = "<group>"; };
+		02D4171B26C0DEDC00FCB01A /* GitHubUserListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserListCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,60 @@
 			children = (
 				02D416F226BE6AA500FCB01A /* AppDelegate.swift */,
 				02D416F426BE6AA500FCB01A /* SceneDelegate.swift */,
-				02D416F626BE6AA500FCB01A /* ViewController.swift */,
-				02D416F826BE6AA500FCB01A /* Main.storyboard */,
+				02D4170A26BE6FDB00FCB01A /* Service */,
+				02D4170B26BE6FE700FCB01A /* Model */,
+				02D4170E26BE731200FCB01A /* View */,
+				02D4171226C0CDCE00FCB01A /* View Model */,
+				02D4171126C0CDAB00FCB01A /* Controller */,
+				02D4171726C0D4F600FCB01A /* Box.swift */,
 				02D416FB26BE6AA700FCB01A /* Assets.xcassets */,
 				02D416FD26BE6AA700FCB01A /* LaunchScreen.storyboard */,
 				02D4170026BE6AA700FCB01A /* Info.plist */,
 			);
 			path = GitHubUserAPI;
+			sourceTree = "<group>";
+		};
+		02D4170A26BE6FDB00FCB01A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				02D4170826BE6D8000FCB01A /* BaseService.swift */,
+				02D4170C26BE6FFC00FCB01A /* GitHubService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		02D4170B26BE6FE700FCB01A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02D4170626BE6AD800FCB01A /* GitHubUser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		02D4170E26BE731200FCB01A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02D416F826BE6AA500FCB01A /* Main.storyboard */,
+				02D4171926C0DE8A00FCB01A /* GitHubUserListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02D4171126C0CDAB00FCB01A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02D416F626BE6AA500FCB01A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02D4171226C0CDCE00FCB01A /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				02D4171326C0CDF300FCB01A /* GitHubUserListViewModel.swift */,
+				02D4171B26C0DEDC00FCB01A /* GitHubUserListCellViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D4171426C0CDF300FCB01A /* GitHubUserListViewModel.swift in Sources */,
+				02D4171A26C0DE8A00FCB01A /* GitHubUserListTableViewCell.swift in Sources */,
 				02D416F726BE6AA500FCB01A /* ViewController.swift in Sources */,
+				02D4170726BE6AD800FCB01A /* GitHubUser.swift in Sources */,
 				02D416F326BE6AA500FCB01A /* AppDelegate.swift in Sources */,
+				02D4170926BE6D8000FCB01A /* BaseService.swift in Sources */,
+				02D4171C26C0DEDC00FCB01A /* GitHubUserListCellViewModel.swift in Sources */,
+				02D4171826C0D4F600FCB01A /* Box.swift in Sources */,
+				02D4170D26BE6FFC00FCB01A /* GitHubService.swift in Sources */,
 				02D416F526BE6AA500FCB01A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
