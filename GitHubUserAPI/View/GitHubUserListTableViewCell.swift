@@ -8,21 +8,32 @@
 import UIKit.UITableViewCell
 
 class GitHubUserListTableViewCell: UITableViewCell {
+    private var viewModel: GitHubUserListCellViewModel?
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.imageView?.makeCircleBorder()
+    }
+    
+    override func prepareForReuse() {
+        self.imageView?.image = nil
+        self.viewModel?.onImageDownload = nil
+    }
+    
     func setupDataBind(viewModel: GitHubUserListCellViewModel) {
-        viewModel.title.bind { [weak self] title in
+        self.viewModel = viewModel
+        self.viewModel?.title.bind { [weak self] title in
             self?.textLabel?.text = title
         }
-        viewModel.type.bind { [weak self] subtitle in
+        self.viewModel?.type.bind { [weak self] subtitle in
             self?.detailTextLabel?.text = subtitle
         }
-        viewModel.image.bind { [weak self] image in
+        self.viewModel?.onImageDownload = { [weak self] image in
             DispatchQueue.main.async {
                 self?.imageView?.image = image
                 self?.setNeedsLayout()
             }
         }
-        viewModel.imageUrl.bind { url in
-            viewModel.getImagesFrom(url: url)
-        }
+        self.viewModel?.getImage()
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02AD88D426C1682500CB6811 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD88D326C1682500CB6811 /* DetailViewController.swift */; };
+		02AD88D626C2286000CB6811 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD88D526C2286000CB6811 /* MineViewController.swift */; };
+		02AD88D826C2292100CB6811 /* MineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD88D726C2292100CB6811 /* MineViewModel.swift */; };
+		02AD88DA26C246D600CB6811 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD88D926C246D600CB6811 /* UIImageViewExtension.swift */; };
 		02D416F326BE6AA500FCB01A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D416F226BE6AA500FCB01A /* AppDelegate.swift */; };
 		02D416F526BE6AA500FCB01A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D416F426BE6AA500FCB01A /* SceneDelegate.swift */; };
 		02D416F726BE6AA500FCB01A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D416F626BE6AA500FCB01A /* ViewController.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02AD88D326C1682500CB6811 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		02AD88D526C2286000CB6811 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		02AD88D726C2292100CB6811 /* MineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewModel.swift; sourceTree = "<group>"; };
+		02AD88D926C246D600CB6811 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		02D416EF26BE6AA500FCB01A /* GitHubUserAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubUserAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D416F226BE6AA500FCB01A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02D416F426BE6AA500FCB01A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02AD88DB26C2527A00CB6811 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				02D4171726C0D4F600FCB01A /* Box.swift */,
+				02AD88D926C246D600CB6811 /* UIImageViewExtension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		02D416E626BE6AA400FCB01A = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +94,7 @@
 				02D4170E26BE731200FCB01A /* View */,
 				02D4171226C0CDCE00FCB01A /* View Model */,
 				02D4171126C0CDAB00FCB01A /* Controller */,
-				02D4171726C0D4F600FCB01A /* Box.swift */,
+				02AD88DB26C2527A00CB6811 /* Utility */,
 				02D416FB26BE6AA700FCB01A /* Assets.xcassets */,
 				02D416FD26BE6AA700FCB01A /* LaunchScreen.storyboard */,
 				02D4170026BE6AA700FCB01A /* Info.plist */,
@@ -115,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				02D416F626BE6AA500FCB01A /* ViewController.swift */,
+				02AD88D326C1682500CB6811 /* DetailViewController.swift */,
+				02AD88D526C2286000CB6811 /* MineViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -124,6 +143,7 @@
 			children = (
 				02D4171326C0CDF300FCB01A /* GitHubUserListViewModel.swift */,
 				02D4171B26C0DEDC00FCB01A /* GitHubUserListCellViewModel.swift */,
+				02AD88D726C2292100CB6811 /* MineViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -198,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AD88D426C1682500CB6811 /* DetailViewController.swift in Sources */,
 				02D4171426C0CDF300FCB01A /* GitHubUserListViewModel.swift in Sources */,
 				02D4171A26C0DE8A00FCB01A /* GitHubUserListTableViewCell.swift in Sources */,
 				02D416F726BE6AA500FCB01A /* ViewController.swift in Sources */,
@@ -206,8 +227,11 @@
 				02D4170926BE6D8000FCB01A /* BaseService.swift in Sources */,
 				02D4171C26C0DEDC00FCB01A /* GitHubUserListCellViewModel.swift in Sources */,
 				02D4171826C0D4F600FCB01A /* Box.swift in Sources */,
+				02AD88D826C2292100CB6811 /* MineViewModel.swift in Sources */,
 				02D4170D26BE6FFC00FCB01A /* GitHubService.swift in Sources */,
+				02AD88DA26C246D600CB6811 /* UIImageViewExtension.swift in Sources */,
 				02D416F526BE6AA500FCB01A /* SceneDelegate.swift in Sources */,
+				02AD88D626C2286000CB6811 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
